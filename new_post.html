@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>View page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 2mm;
+            overflow: hidden;
+            font-size: x-large;
+        }
+        li{
+            float: left;
+            color: rgba(255,255,255,0.5);
+        }
+        li a{
+            display: block;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            color: white;
+            padding: 20px;
+            background-size: cover;
+            margin: 0;
+        }
+        nav{
+            background-color: black;
+        }
+        .first{
+            margin-top: 1cm;
+            margin-left: 10.5cm;
+        }
+        body
+        {
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 17px;
+            background-color: white;
+        }
+        button
+        {
+            margin-top: 5mm;
+            color: deepskyblue;
+            background-color: white;
+            border-color:deepskyblue;
+
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div>
+            <ul>
+                <li><a href="index.html" style="margin-left: 10cm;"><b style="font-size:x-large;">&lt; / &gt;</b><b> Blogger</b></a></li>
+                <li><a href="index.html"><b>Home</b></a></li>
+                <li><a href="new_post.html"><b>New Post</b></a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="first">
+        <input id="1" type="text" placeholder="    Title Here" style="width: 80%;height: 8mm;border: 1px ridge;">
+        <br>
+        <input id="2" type="url" placeholder="    Image Url Here" style="width: 80%;height: 8mm;border: 1px ridge; margin-top: 5mm;">
+        <br>
+        <textarea id="3" style="width: 80%;height: 8cm;border: 1px ridge;padding-top: 2mm;margin-top: 5mm;" placeholder="  Description Here"></textarea>
+        <br>
+        <button type="button" style="padding-bottom: 0;color: deepskyblue;border-color: deepskyblue;">Submit</button>
+    </div>
+</body>
+</html>

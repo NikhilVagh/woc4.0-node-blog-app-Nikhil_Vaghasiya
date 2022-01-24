@@ -1,0 +1,23 @@
+<%for(var i=0;i<users.length;i++){%>
+
+    <tr>
+        <td>
+            <img src="<%= users[i].url%>" align="left" class="i1">
+            <h3><%= users[i].title%></h3>
+            <%= new Date(users[i].date).toDateString() %>
+            <br>
+            <script>
+                var div=document.createElement("div");
+                div.innerHTML='<p><%= users[i].des %></p>';
+                var excerpt=div.innerText.substring(0,30);
+                document.write(excerpt);
+            </script>
+        </td>
+    </tr>
+    <tr>
+        <td class="data">
+            <a href="/view-user?id=<%= users[i]._id %>" class="l1">Read more</a>
+            <hr>
+        </td>
+    </tr>
+<%}%>

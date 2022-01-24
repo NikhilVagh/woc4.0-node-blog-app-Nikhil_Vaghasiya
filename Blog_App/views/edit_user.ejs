@@ -1,0 +1,24 @@
+<!-- include header -->
+<%- include('include/_header') %>
+<!-- /include header -->
+
+<main>
+    <form method="post" id="edit_user">
+        <div class="first">
+            <input name="id" type="hidden" value="<%= user._id %>" class="inp1">
+            <input name="title" id="x" type="text" value="<%= user.title %>" class="inp1">
+            <br>
+            <input name="url" id="y" type="url" value="<%= user.url %>" placeholder="    Image Url Here" class="inp1">
+            <br>
+            <textarea name="des" id="z" placeholder="  Description Here"><%= user.des %></textarea>
+            <br>
+            <div id="padd">
+                <button type="submit" id="w" class="update">Submit</button>
+            </div>
+        </div>
+    </form>
+</main>
+
+<!-- include footer -->
+<%- include('include/_footer') %>
+<!-- /include footer -->

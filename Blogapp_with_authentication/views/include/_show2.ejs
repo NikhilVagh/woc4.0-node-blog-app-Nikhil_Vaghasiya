@@ -1,0 +1,23 @@
+<tr>
+    <td class="data2">
+        <h1><%= user.title%></h1>
+    </td>
+</tr>
+<tr>
+    <td>
+        <img src="<%= user.url%>" class="i2">
+    </td>
+</tr>
+<tr class="m">
+    <td style="padding-left: 1cm;">
+        <br>
+        <%= new Date(user.date).toDateString() %>
+        <br>
+        <textarea rows="4" cols="95" style="margin-top: 5mm;border: none;background-color: transparent;font-family: 'Barlow', sans-serif;" disabled><%= user.des%>
+        </textarea>
+        <br>
+        <br>
+        <a href="/edit-user?id=<%= user._id%>" class="edit">Edit</a>
+        <a href="/home" id="ll" class="delete" data-id=<%= user._id%>>Delete</a>
+    </td>
+</tr>

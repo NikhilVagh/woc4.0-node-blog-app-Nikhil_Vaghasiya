@@ -1,0 +1,19 @@
+<form action="/api/users" method="post" id="new_post">
+    <div class="first">
+        <input name="title" id="x" type="text" placeholder="    Title Here" class="inp1">
+        <input name="date" type="hidden" id="un">
+        <script>
+            const d = new Date();
+            document.getElementById("un").setAttribute("value",d);
+        </script>
+        <br>
+        <input name="url" id="y" type="url" placeholder="    Image Url Here" class="inp1">
+        <br>
+        <textarea name="des" id="z" placeholder="  Description Here"></textarea>
+        <br>
+        <input name="username" type="hidden" id="un">
+        <div id="padd">
+            <button type="submit" id="w" class="update">Submit</button>
+        </div>
+    </div>
+</form>
